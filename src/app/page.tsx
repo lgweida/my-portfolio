@@ -1,3 +1,8 @@
+
+import { OrderDialog } from '@/components/ui/order-dialog'
+import { OrderPopover } from '@/components/ui/order-popover'
+import { PositionDataTable } from '@/components/ui/position'
+
 import Image from 'next/image'
 
 export default function Home() {
@@ -6,6 +11,13 @@ export default function Home() {
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
         <p>main section</p>
         <p className="text-2xl">Large Text</p>
+        <OrderDialog />
+      </div>
+      <div>
+        <PositionDataTable />
+      </div>
+      <div>
+        <OrderPopover />
       </div>
 
     </main>
